@@ -12,6 +12,8 @@ class BascketballPoints extends StatefulWidget {
 }
 
 class _BascketballPointsState extends State<BascketballPoints> {
+  int teamAPoints = 0;
+  int teamBPoints = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,7 +39,7 @@ class _BascketballPointsState extends State<BascketballPoints> {
                       style: TextStyle(fontSize: 32),
                     ),
                     Text(
-                      '50',
+                      '$teamAPoints',
                       style: TextStyle(fontSize: 100),
                     ),
                     ElevatedButton(
@@ -89,7 +91,7 @@ class _BascketballPointsState extends State<BascketballPoints> {
                       style: TextStyle(fontSize: 32),
                     ),
                     Text(
-                      '50',
+                      '$teamBPoints',
                       style: TextStyle(fontSize: 100),
                     ),
                     ElevatedButton(
